@@ -42,7 +42,7 @@ def create_pdf_endpoint():
         @after_this_request
         def remove_pdf(response):
             try:
-                delayed_remove(pdf_path, 30)
+                delayed_remove(pdf_path, 40)
             except Exception as error:
                 app.logger.error(
                     "Error removing or closing downloaded file handle", error
