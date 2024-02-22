@@ -91,11 +91,3 @@ async def scrapefromcardID(cardID):
             async with session.get(image_url) as image_response:
                 image = await image_response.read()
                 return image
-
-
-if __name__ == "__main__":
-    card_status = {"44268": 2, "45209": 5, "41333": 4}  # 実際のカードIDに置き換える
-    c = canvas.Canvas("test.pdf", pagesize=A4)
-    cardIDs = ["41333", "44268", "45209"]  # 実際のカードIDに置き換える
-
-    asyncio.run(create_pdf_and_cleanup(cardIDs, c, card_status))
