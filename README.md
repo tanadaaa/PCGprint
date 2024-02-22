@@ -1,3 +1,7 @@
+# これはなに
+
+ポケカのデッキコードからプロキシ印刷用PDFを生成できます
+
 # (windows) 実行方法
 
 1. [Python](https://www.python.org)をインストール
