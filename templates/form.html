@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <title>デッキPDF作成フォーム</title>
+    <script type="text/javascript">
+      // Flaskから渡された変数をJavaScriptで受け取る
+      window.onload = function() {
+          var showAlert = {{ alert_message|tojson }};
+          if (showAlert) {
+              alert("存在しないデッキコードです！");
+          }
+      }
+    </script>
   </head>
   <body>
     <h1>デッキPDFファイル作成</h1>

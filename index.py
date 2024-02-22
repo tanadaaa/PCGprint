@@ -22,7 +22,7 @@ app = Flask(__name__)
 @app.route("/", methods=["GET"])
 def index():
     # index.htmlを表示
-    return render_template("form.html")
+    return render_template("form.html", alert_message=False)
 
 
 @app.route("/create-pdf", methods=["POST"])
@@ -53,7 +53,7 @@ def create_pdf_endpoint():
         return send_from_directory("public", safe_pdf_name, as_attachment=True)
     else:
         # PDF作成失敗時の処理
-        return jsonify({"error": "PDFの作成に失敗しました。"}), 500
+        return render_template("form.html", alert_message=True)
 
 
 def delayed_remove(path, delay):
