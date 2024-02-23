@@ -28,8 +28,6 @@ margin_y = (page_height - (card_height * cards_per_column)) / 2
 
 
 async def fetch_and_save_card_image(cardID):
-    # 画像を取得するURL（ダミーで置き換える必要があります）
-
     async with httpx.AsyncClient() as client:
         response = await scrapefromcardID(cardID)
 
@@ -48,8 +46,6 @@ async def create_pdf_and_cleanup(cardIDs, c, card_status):
     )
     print(filenames)
 
-    # ここでPDFを作成する処理を実装
-    # PDF作成ロジック（略）
     card_index = 0
     for k, v in card_status.items():
         for i in range(v):
