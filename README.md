@@ -3,7 +3,7 @@
 ポケカのデッキコードからプロキシ印刷用 PDF を生成できます
 スクレイピングを使用しているのでほどほどに
 
-# (windows) 実行方法
+# 実行方法
 
 1. Docker Desktop をインストール [windows](https://docs.docker.com/desktop/install/windows-install/) [mac](https://docs.docker.com/desktop/install/mac-install/) [Linux](https://docs.docker.com/desktop/install/linux-install/)
 2. Docker Desktop を起動
