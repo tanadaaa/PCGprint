@@ -5,7 +5,7 @@
 
 # (windows) 実行方法
 
-1. Docker Desktop をインストール[windows](https://docs.docker.com/desktop/install/windows-install/)[mac](https://docs.docker.com/desktop/install/mac-install/)[Linux](https://docs.docker.com/desktop/install/linux-install/)
+1. Docker Desktop をインストール [windows](https://docs.docker.com/desktop/install/windows-install/) [mac](https://docs.docker.com/desktop/install/mac-install/) [Linux](https://docs.docker.com/desktop/install/linux-install/)
 2. Docker Desktop を起動
 3. この右上の<>code から Download ZIP でローカルに落とし解凍し、Dockerfile があるディレクトリでターミナルを起動
 4. `docker-compose up -d` でコンテナを起動
