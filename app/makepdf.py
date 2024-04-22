@@ -7,7 +7,7 @@ import asyncio
 import async_export_jpgs
 
 # カードのサイズ (63mm x 88mm)
-card_width = 64 * mm
+card_width = 63 * mm
 card_height = 88 * mm
 
 # A4用紙のサイズ
